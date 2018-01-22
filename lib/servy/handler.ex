@@ -29,7 +29,7 @@ defmodule Servy.Handler do
 		route(conv, conv.method, conv.path)
 	end
 
-	# Function clauses (two arrity)
+	# Function clauses (three arrity)
 	def route(conv, "GET", "/wildthings") do
 		%{ conv | status: 200, resp_body: "Bears, Lions, Tigers" }
 	end
